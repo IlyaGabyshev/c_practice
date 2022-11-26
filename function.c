@@ -6,13 +6,14 @@ void strings (char massiv[]);
 float mult (float x, float y);
 
 int main(){
-    printname();
+    int o = 789;
+    printname(o);
 
     sum(1,2);
 
     char arr1[] = {'1', '2', 'p', 'W'};
     strings(arr1);
-    char arr2[] = {"votermetr gospoda"};
+    char arr2[] = {"slova v dvoinih kavi4kax"};
     strings(arr2);
 
     float proizvedenie = mult(1.9,5.8);
