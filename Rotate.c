@@ -7,11 +7,11 @@ printf("A=%d B=%d\n", A, B);
  int x0 = (*x1+*x2)/2;
  int y0 = (*y1+*y2)/2;
 
-*x1 = x0 + A/2;    
-*y1 = B/4 + *y1;
+*x1 = x0 - B/2;    
+*y1 = y0 + A/2;
 
-*x2 = B/2 + A/2 + *x1;
-*y2= *y2 - A/2;
+*x2 = x0 + B/2;
+*y2= y0 - A/2;
 
 printf("%d %d %d %d\n",*x1,*y1, *x2, *y2);
 }
@@ -21,7 +21,3 @@ scanf("%d%d%d%d", &xlt, &ylt, &xrb, &yrb);
 rotateC(&xlt, &ylt, &xrb, &yrb);
 return 0;
 }
-
-
-
-
