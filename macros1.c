@@ -15,3 +15,4 @@ printf("%d\n", mm);
 mm = time2min(h+1, m+5);
 printf("%d\n", mm);
 }
+
