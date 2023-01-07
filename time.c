@@ -1,0 +1,26 @@
+#include <stdio.h>
+#define min2time(mm,h,m) h=((mm)/60)%24, m=(mm)%60 
+
+int main(void)
+{
+int h, m, mm;
+scanf("%d", &mm);
+
+min2time(mm, h, m);
+printf("%02d:%02d\n", h, m);
+
+min2time(mm+65, h, m);
+printf("%02d:%02d\n", h, m);
+}
+/*
+
+Sample Input:
+
+135
+
+Sample Output:
+
+02:15
+03:20
+
+*/
